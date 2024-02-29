@@ -1,4 +1,4 @@
-﻿Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator')) {
@@ -69,7 +69,7 @@ Catch
 
 $Form                            = New-Object System.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(500,570)
-$Form.Text                       = "Xercaii Free Tweaks"
+$Form.Text                       = "Xercaii Free Tweaking Utility"
 $Form.StartPosition              = "CenterScreen"
 $Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#252525")
 $Form.ShowIcon                   = $false
@@ -90,7 +90,7 @@ $Label1.text                     = "MAIN TWEAKS"
 $Label1.AutoSize                 = $True
 $Label1.width                    = 230
 $Label1.height                   = 25
-$Label1.location                 = New-Object System.Drawing.Point(120,12)
+$Label1.location                 = New-Object System.Drawing.Point(125,12)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -99,7 +99,7 @@ $Label2.text                     = "EXTRA"
 $Label2.AutoSize                 = $True
 $Label2.width                    = 457
 $Label2.height                   = 142
-$Label2.location                 = New-Object System.Drawing.Point(185,300)
+$Label2.location                 = New-Object System.Drawing.Point(190,300)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -116,7 +116,7 @@ $cleartempfiles                  = New-Object system.Windows.Forms.Button
 $cleartempfiles.text             = "CLEAR TEMPORARY FILES"
 $cleartempfiles.width            = 204
 $cleartempfiles.height           = 30
-$cleartempfiles.location         = New-Object System.Drawing.Point(35,56)
+$cleartempfiles.location         = New-Object System.Drawing.Point(40,56)
 $cleartempfiles.Font             = New-Object System.Drawing.Font('Consolas',9)
 $cleartempfiles.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -124,7 +124,7 @@ $disablestartupprograms          = New-Object system.Windows.Forms.Button
 $disablestartupprograms.text     = "DISABLE STARTUP PROGRAMS"
 $disablestartupprograms.width    = 204
 $disablestartupprograms.height   = 30
-$disablestartupprograms.location = New-Object System.Drawing.Point(35,86)
+$disablestartupprograms.location = New-Object System.Drawing.Point(40,86)
 $disablestartupprograms.Font     = New-Object System.Drawing.Font('Consolas',9)
 $disablestartupprograms.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -132,7 +132,7 @@ $xercaiipowerplan                = New-Object system.Windows.Forms.Button
 $xercaiipowerplan.text           = "XERCAII POWER PLAN"
 $xercaiipowerplan.width          = 203
 $xercaiipowerplan.height         = 30
-$xercaiipowerplan.location       = New-Object System.Drawing.Point(35,136)
+$xercaiipowerplan.location       = New-Object System.Drawing.Point(40,136)
 $xercaiipowerplan.Font           = New-Object System.Drawing.Font('Consolas',9)
 $xercaiipowerplan.ForeColor      = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -140,7 +140,7 @@ $powertweaks                     = New-Object system.Windows.Forms.Button
 $powertweaks.text                = "POWER TWEAKS"
 $powertweaks.width               = 203
 $powertweaks.height              = 30
-$powertweaks.location            = New-Object System.Drawing.Point(35,166)
+$powertweaks.location            = New-Object System.Drawing.Point(40,166)
 $powertweaks.Font                = New-Object System.Drawing.Font('Consolas',9)
 $powertweaks.ForeColor           = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -148,7 +148,7 @@ $networktweaks                   = New-Object system.Windows.Forms.Button
 $networktweaks.text              = "NETWORK TWEAKS"
 $networktweaks.width             = 205
 $networktweaks.height            = 30
-$networktweaks.location          = New-Object System.Drawing.Point(35,216)
+$networktweaks.location          = New-Object System.Drawing.Point(40,216)
 $networktweaks.Font              = New-Object System.Drawing.Font('Consolas',9)
 $networktweaks.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -156,7 +156,7 @@ $usbtweaks                       = New-Object system.Windows.Forms.Button
 $usbtweaks.text                  = "USB TWEAKS"
 $usbtweaks.width                 = 205
 $usbtweaks.height                = 30
-$usbtweaks.location              = New-Object System.Drawing.Point(35,246)
+$usbtweaks.location              = New-Object System.Drawing.Point(40,246)
 $usbtweaks.Font                  = New-Object System.Drawing.Font('Consolas',9)
 $usbtweaks.ForeColor             = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -164,7 +164,7 @@ $ramtweaks                       = New-Object system.Windows.Forms.Button
 $ramtweaks.text                  = "RAM TWEAKS"
 $ramtweaks.width                 = 205
 $ramtweaks.height                = 30
-$ramtweaks.location              = New-Object System.Drawing.Point(250,56)
+$ramtweaks.location              = New-Object System.Drawing.Point(255,56)
 $ramtweaks.Font                  = New-Object System.Drawing.Font('Consolas',9)
 $ramtweaks.ForeColor             = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -172,7 +172,7 @@ $disablenotifications            = New-Object system.Windows.Forms.Button
 $disablenotifications.text       = "DISABLE NOTIFICATIONS"
 $disablenotifications.width      = 205
 $disablenotifications.height     = 30
-$disablenotifications.location   = New-Object System.Drawing.Point(250,86)
+$disablenotifications.location   = New-Object System.Drawing.Point(255,86)
 $disablenotifications.Font       = New-Object System.Drawing.Font('Consolas',9)
 $disablenotifications.ForeColor  = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -180,7 +180,7 @@ $disablecortana                  = New-Object system.Windows.Forms.Button
 $disablecortana.text             = "DISABLE CORTANA"
 $disablecortana.width            = 205
 $disablecortana.height           = 30
-$disablecortana.location         = New-Object System.Drawing.Point(250,136)
+$disablecortana.location         = New-Object System.Drawing.Point(255,136)
 $disablecortana.Font             = New-Object System.Drawing.Font('Consolas',9)
 $disablecortana.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -188,7 +188,7 @@ $uninstalluselessapps            = New-Object system.Windows.Forms.Button
 $uninstalluselessapps.text       = "UNINSTALL USELESS APPS"
 $uninstalluselessapps.width      = 205
 $uninstalluselessapps.height     = 30
-$uninstalluselessapps.location   = New-Object System.Drawing.Point(250,166)
+$uninstalluselessapps.location   = New-Object System.Drawing.Point(255,166)
 $uninstalluselessapps.Font       = New-Object System.Drawing.Font('Consolas',9)
 $uninstalluselessapps.ForeColor  = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
@@ -196,45 +196,53 @@ $ctt                             = New-Object system.Windows.Forms.Button
 $ctt.text                        = "CTT"
 $ctt.width                       = 205
 $ctt.height                      = 30
-$ctt.location                    = New-Object System.Drawing.Point(250,216)
+$ctt.location                    = New-Object System.Drawing.Point(255,216)
 $ctt.Font                        = New-Object System.Drawing.Font('Consolas',9)
 $ctt.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
-$windowsdebloat                = New-Object system.Windows.Forms.Button
-$windowsdebloat.text           = "WINDOWS 10/11 DEBLOAT"
-$windowsdebloat.width          = 205
-$windowsdebloat.height         = 30
-$windowsdebloat.location       = New-Object System.Drawing.Point(250,246)
-$windowsdebloat.Font           = New-Object System.Drawing.Font('Consolas',9)
-$windowsdebloat.ForeColor      = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
+$windowsdebloat                  = New-Object system.Windows.Forms.Button
+$windowsdebloat.text             = "WINDOWS 10/11 DEBLOAT"
+$windowsdebloat.width            = 205
+$windowsdebloat.height           = 30
+$windowsdebloat.location         = New-Object System.Drawing.Point(255,246)
+$windowsdebloat.Font             = New-Object System.Drawing.Font('Consolas',9)
+$windowsdebloat.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
-$xercaiiyoutube                = New-Object system.Windows.Forms.Button
-$xercaiiyoutube.text           = "XERCAII YOUTUBE"
-$xercaiiyoutube.width          = 205
-$xercaiiyoutube.height         = 30
-$xercaiiyoutube.location       = New-Object System.Drawing.Point(145,344)
-$xercaiiyoutube.Font           = New-Object System.Drawing.Font('Consolas',9)
-$xercaiiyoutube.ForeColor      = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
+$xercaiiyoutube                  = New-Object system.Windows.Forms.Button
+$xercaiiyoutube.text             = "XERCAII YOUTUBE"
+$xercaiiyoutube.width            = 205
+$xercaiiyoutube.height           = 30
+$xercaiiyoutube.location         = New-Object System.Drawing.Point(147.5,344)
+$xercaiiyoutube.Font             = New-Object System.Drawing.Font('Consolas',9)
+$xercaiiyoutube.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
-$xercaiidiscord                = New-Object system.Windows.Forms.Button
-$xercaiidiscord.text           = "XERCAII DISCORD"
-$xercaiidiscord.width          = 205
-$xercaiidiscord.height         = 30
-$xercaiidiscord.location       = New-Object System.Drawing.Point(145,374)
-$xercaiidiscord.Font           = New-Object System.Drawing.Font('Consolas',9)
-$xercaiidiscord.ForeColor      = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
+$xercaiidiscord                  = New-Object system.Windows.Forms.Button
+$xercaiidiscord.text             = "XERCAII DISCORD"
+$xercaiidiscord.width            = 205
+$xercaiidiscord.height           = 30
+$xercaiidiscord.location         = New-Object System.Drawing.Point(147.5,374)
+$xercaiidiscord.Font             = New-Object System.Drawing.Font('Consolas',9)
+$xercaiidiscord.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
-$userestorepoint               = New-Object system.Windows.Forms.Button
-$userestorepoint.text          = "USE RESTORE POINT"
-$userestorepoint.width         = 205
-$userestorepoint.height        = 30
-$userestorepoint.location      = New-Object System.Drawing.Point(145,404)
-$userestorepoint.Font          = New-Object System.Drawing.Font('Consolas',9)
-$userestorepoint.ForeColor     = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
+$xercaiipremium                  = New-Object system.Windows.Forms.Button
+$xercaiipremium.text             = "XERCAII PREMIUM TWEAKS"
+$xercaiipremium.width            = 205
+$xercaiipremium.height           = 30
+$xercaiipremium.location         = New-Object System.Drawing.Point(147.5,404)
+$xercaiipremium.Font             = New-Object System.Drawing.Font('Consolas',9)
+$xercaiipremium.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
+
+$userestorepoint                 = New-Object system.Windows.Forms.Button
+$userestorepoint.text            = "USE RESTORE POINT"
+$userestorepoint.width           = 205
+$userestorepoint.height          = 30
+$userestorepoint.location        = New-Object System.Drawing.Point(147.5,434)
+$userestorepoint.Font            = New-Object System.Drawing.Font('Consolas',9)
+$userestorepoint.ForeColor       = [System.Drawing.ColorTranslator]::FromHtml("#eeeeee")
 
 
 
-$Form.controls.AddRange(@($cleartempfiles, $disablestartupprograms, $xercaiipowerplan, $powertweaks, $networktweaks, $usbtweaks, $ramtweaks, $disablenotifications, $disablecortana, $uninstalluselessapps, $ctt, $windowsdebloat, $label1, $label2, $label3, $xercaiiyoutube, $xercaiidiscord, $userestorepoint ))
+$Form.controls.AddRange(@($cleartempfiles, $disablestartupprograms, $xercaiipowerplan, $powertweaks, $networktweaks, $usbtweaks, $ramtweaks, $disablenotifications, $disablecortana, $uninstalluselessapps, $ctt, $windowsdebloat, $label1, $label2, $label3, $xercaiiyoutube, $xercaiidiscord, $userestorepoint,$xercaiipremium))
 
 #Main Tweaks
 $cleartempfiles.Add_Click({
@@ -581,13 +589,17 @@ Start-Process "https://discord.gg/6XpAu2RcsG"
 
 })
 
+$xercaiipremium.Add_Click({
+Start-Sleep -Seconds (1)
+Start-Process "https://discord.com/channels/1011097061883654255/shop"
+
+})
+
 $userestorepoint.Add_Click({
 Start-Sleep -Seconds (1)
 Start-Process rstrui.exe
 
 })
-
-
 
 
 [void]$Form.ShowDialog()
